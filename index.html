@@ -13,63 +13,63 @@
 </head>
 
 <body>
-  <div>
+  <div class="grid-container">
 
     <!-- component 1 -->
-    <main>
+    <main class="chat-window-component">
 
       <!-- https://ilikekillnerds.com/2014/07/how-to-correctly-use-semantic-html5-article-main-and-section-tags/ -->
       <!-- Google "HTML can I have article element inside main element"-->
 
       <!-- user profile section -->
-      <article>
-        <figure>
+      <article class="chat-window-component__user-profile">
+        <figure class="chat-window-component__user-profile-img">
           <img src="./images/avatar.jpg" alt="Samuel's profile picture">
         </figure>
-        <h2>
+        <h2 class="chat-window-component__user-name">
           Samuel Green
         </h2>
-        <p>
+        <p class="chat-window-component__user-status">
           Available to Walk
         </p>
       </article>
 
       <!-- users chat section -->
-      <article>
-        <p>
+      <article class="chat-window-component__users-chat-section">
+        <p class="chat-window-component__chat-1">
           That sounds great. I’d be happy with that.
         </p>
-        <p>
+        <p class="chat-window-component__chat-2">
           Could you send over some pictures of your dog, please?
         </p>
         <!-- Google "html can I have multiple img elements inside figure" -->
         <!-- http://html5doctor.com/the-figure-figcaption-elements/#:~:text=Only%20one%20element%20may,%3E%20or%20). -->
-        <figure>
+        <figure class="chat-window-component__images">
           <img src="./images/dog-image-1.jpg" alt="dog 1st image">
           <img src="./images/dog-image-2.jpg" alt="dog 2nd image">
           <img src="./images/dog-image-3.jpg" alt="dog 3rd image">
         </figure>
-        <p>
+        <p class="chat-window-component__chat-3">
           Here are a few pictures. She’s a happy girl!
         </p>
-        <p>
+        <p class="chat-window-component__chat-4">
           Can you make it?
         </p>
-        <p>
+        <p class="chat-window-component__chat-5">
           She looks so happy! The time we discussed works. How long shall I take her out for?
         </p>
-        <section>
+        <section class="chat-window-component__purchase-service-option-1">
           30 minute walk
           $29
         </section>
-        <section>
+        <section class="chat-window-component__purchase-service-option-1">
           1 hour walk
           $49
         </section>
       </article>
 
       <!-- new message input section -->
-      <article>
+      <article class="chat-window-component__new-message-input">
         <label for="message"></label>
         <input type="text" id="message" placeholder="Type a message…">
       </article>
@@ -77,11 +77,11 @@
     </main>
 
     <!-- component 1 -->
-    <article>
-      <h1>
+    <article class="app-info-component">
+      <h1 class="app-info-component__header">
         Simple booking
       </h1>
-      <p>
+      <p class="app-info-component__detailed-info">
         Stay in touch with our dog walkers through the chat interface. This makes it easy to
         discuss arrangements and make bookings. Once the walk has been completed you can rate
         your walker and book again all through the chat.
