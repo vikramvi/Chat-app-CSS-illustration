@@ -1,0 +1,72 @@
+/* Write GOOD comments so that next developer ... */
+/* ( who happens to be a killer psycopath & knows where you stay ). */
+/* He's going to maintain this code; need NOT have to get back to you */
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/* --------------------------- generic styling --------------------------- */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  /* color related */
+
+  --clr-primary-pale-violet: hsl(276, 100%, 81%);
+  --clr-primary-moderate-violet: hsl(276, 55%, 52%);
+  --clr-primary-desaturated-dark-violet: hsl(271, 15%, 43%);
+  --clr-primary-grayish-blue: hsl(206, 6%, 79%);
+  --clr-primary-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --clr-primary-dark-grayish-violet: hsl(270, 7%, 64%);
+
+  --clr-secondary-white: hsl(0, 0%, 100%);
+  --clr-secondary-light-grayish-violet: hsl(270, 20%, 96%);
+  --clr-secondary-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --clr-secondary-very-light-magenta: hsl(289, 100%, 72%);
+
+  --clr-gradient-light-magenta: hsl(293, 100%, 63%);
+  --clr-gradient-light-violet: hsl(264, 100%, 61%);
+
+  /* fonts related */
+
+  --ff-primary: "Rubik", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  /* 16px */
+  font-size: 1.6em;
+  font-family: var(--ff-primary);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* ----------- ----------- ----------- ----------- ----------- ------------ */
+/* --------------------------- specific styling --------------------------- */
+/* ----------- ----------- ----------- ----------- ----------- ------------ */
