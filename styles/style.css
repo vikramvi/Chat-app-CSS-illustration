@@ -70,3 +70,44 @@ p {
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
+
+/* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "chat-window-component"
+    "app-info-component";
+  gap: 8rem;
+  justify-items: center;
+
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.chat-window-component {
+  width: 280px;
+
+  display: grid;
+}
+
+.app-info-component {
+  width: 320px;
+
+  display: grid;
+}
+
+/* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
+
+/* Component 1 grid areas */
+
+.chat-window-component {
+  grid-area: chat-window-component;
+}
+
+/* Component 2 grid areas */
+
+.app-info-component {
+  grid-area: app-info-component;
+}
