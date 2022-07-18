@@ -86,11 +86,76 @@ p {
   margin-bottom: 6rem;
 }
 
+/* style 1st component - mobile */
+
 .chat-window-component {
-  width: 280px;
+  width: 300px;
+
+  border: 14px solid black;
+  border-radius: 4rem;
 
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "chat-window-component__user-profile"
+    "chat-window-component__users-chat-section"
+    "chat-window-component__new-message-input";
 }
+
+.chat-window-component__user-profile {
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-areas:
+    "chat-window-component__white-top chat-window-component__white-top"
+    "chat-window-component__user-profile-img chat-window-component__user-name"
+    "chat-window-component__user-profile-img chat-window-component__user-status";
+  align-items: center;
+
+  padding: 0 2rem 1.5rem 2rem;
+
+  border-radius: 2.5rem 2.5rem 1rem 1rem;
+
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+}
+
+.chat-window-component__white-top {
+  width: 80%;
+  height: 2rem;
+
+  background-color: var(--clr-secondary-white);
+  justify-self: center;
+
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.chat-window-component__user-profile-img > img {
+  border-radius: 50%;
+}
+
+.chat-window-component__user-name {
+  font-size: 1.8rem;
+
+  margin-left: 1.5rem;
+
+  color: var(--clr-secondary-light-grayish-violet);
+}
+
+.chat-window-component__user-status {
+  font-size: 1.3rem;
+
+  margin-left: 1.5rem;
+
+  color: var(--clr-primary-pale-violet);
+}
+
+/* style 2nd component - mobile */
 
 .app-info-component {
   width: 320px;
@@ -104,6 +169,34 @@ p {
 
 .chat-window-component {
   grid-area: chat-window-component;
+}
+
+.chat-window-component__user-profile {
+  grid-area: chat-window-component__user-profile;
+}
+
+.chat-window-component__white-top {
+  grid-area: chat-window-component__white-top;
+}
+
+.chat-window-component__user-profile-img {
+  grid-area: chat-window-component__user-profile-img;
+}
+
+.chat-window-component__user-name {
+  grid-area: chat-window-component__user-name;
+}
+
+.chat-window-component__user-status {
+  grid-area: chat-window-component__user-status;
+}
+
+.chat-window-component__users-chat-section {
+  grid-area: chat-window-component__users-chat-section;
+}
+
+.chat-window-component__new-message-input {
+  grid-area: chat-window-component__new-message-input;
 }
 
 /* Component 2 grid areas */
