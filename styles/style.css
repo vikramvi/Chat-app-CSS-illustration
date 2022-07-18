@@ -89,7 +89,7 @@ p {
 /* style 1st component - mobile */
 
 .chat-window-component {
-  width: 300px;
+  width: 34rem;
 
   border: 14px solid black;
   border-radius: 4rem;
@@ -178,8 +178,10 @@ p {
 .chat-window-component__chat-1,
 .chat-window-component__chat-2,
 .chat-window-component__chat-5 {
-  font-size: 1.3rem;
-  max-width: 85%;
+  font-size: 1rem;
+
+  max-width: 58%;
+
   justify-self: start;
 
   padding: 0.8rem 1.5rem 0.8rem 1rem;
@@ -193,8 +195,9 @@ p {
 
 .chat-window-component__chat-3,
 .chat-window-component__chat-4 {
-  font-size: 1.3rem;
-  max-width: 85%;
+  font-size: 1rem;
+
+  max-width: 58%;
   justify-self: end;
 
   padding: 0.8rem 1rem;
@@ -218,9 +221,11 @@ p {
 .chat-window-component__image-1,
 .chat-window-component__image-2,
 .chat-window-component__image-3 {
-  height: 6rem;
+  height: 4.6rem;
 
   margin-left: 1rem;
+
+  border-radius: 1.2rem;
 }
 
 /*  */
@@ -229,13 +234,15 @@ p {
   display: flex;
   align-items: center;
 
+  width: 70%;
+
   background: linear-gradient(
     to right,
     hsl(293, 100%, 63%),
     hsl(264, 100%, 61%)
   );
 
-  padding: 1.4rem 0;
+  padding: 0.8rem 0;
 
   border-radius: 1.8rem;
   border-bottom-left-radius: 0.8rem;
@@ -253,16 +260,35 @@ p {
 
 .chat-window-component__purchase-service-option-1 > p:nth-child(2),
 .chat-window-component__purchase-service-option-2 > p:nth-child(2) {
-  font-size: 1.3rem;
+  font-size: 1rem;
 
-  width: 60%;
+  width: 50%;
 }
 
 .chat-window-component__purchase-service-option-1 > p:nth-child(3),
 .chat-window-component__purchase-service-option-2 > p:nth-child(3) {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: var(--fw-500);
+
   color: var(--clr-secondary-white);
+}
+
+/* */
+
+.chat-window-component__new-message-input {
+  justify-self: center;
+  max-width: 100%;
+}
+
+.chat-window-component__new-message-input > input {
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 2rem;
+
+  padding: 1.6rem 15rem 1.6rem 2.2rem;
 }
 
 /* style 2nd component - mobile */
