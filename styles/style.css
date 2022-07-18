@@ -101,6 +101,8 @@ p {
     "chat-window-component__users-chat-section"
     "chat-window-component__new-message-input";
   gap: 1.5rem;
+
+  background: var(--clr-secondary-light-grayish-violet);
 }
 
 .chat-window-component__user-profile {
@@ -177,17 +179,51 @@ p {
 .chat-window-component__chat-2,
 .chat-window-component__chat-5 {
   font-size: 1.3rem;
-  max-width: 66%;
+  max-width: 85%;
   justify-self: start;
+
+  padding: 0.8rem 1.5rem 0.8rem 1rem;
+
+  color: var(--clr-primary-moderate-violet);
+  background: var(--clr-primary-pale-violet);
+
+  border-radius: 1.8rem;
+  border-bottom-left-radius: 0.8rem;
 }
 
 .chat-window-component__chat-3,
 .chat-window-component__chat-4 {
   font-size: 1.3rem;
-  max-width: 70%;
+  max-width: 85%;
   justify-self: end;
+
+  padding: 0.8rem 1rem;
+
+  border-radius: 1.8rem;
+  border-bottom-right-radius: 0.8rem;
+
+  color: var(--clr-primary-desaturated-dark-violet);
+  background: var(--clr-secondary-white);
 }
 
+/*  */
+
+.chat-window-component__images {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.chat-window-component__image-1,
+.chat-window-component__image-2,
+.chat-window-component__image-3 {
+  height: 6rem;
+
+  margin-left: 1rem;
+}
+
+/*  */
 .chat-window-component__purchase-service-option-1,
 .chat-window-component__purchase-service-option-2 {
   display: flex;
