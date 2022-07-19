@@ -357,7 +357,10 @@ p {
   /*  desktop - component 2 styling  */
 
   .app-info-component {
+    width: 50rem;
+
     align-content: center;
+    justify-items: normal;
   }
 
   .app-info-component__detailed-info {
