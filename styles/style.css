@@ -93,7 +93,7 @@ p {
 .chat-window-component {
   width: 34rem;
 
-  border: 14px solid black;
+  border: 14px solid var(--clr-secondary-white);
   border-radius: 4rem;
 
   display: grid;
@@ -321,6 +321,48 @@ p {
   color: var(--clr-primary-dark-grayish-violet);
 
   font-size: 1.75rem;
+}
+
+/* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
+
+@media screen and (min-width: 48rem) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "chat-window-component app-info-component";
+
+    padding: 0 30rem;
+  }
+
+  /*  desktop - component 1 styling  */
+
+  .chat-window-component__users-chat-section {
+    gap: 1rem;
+  }
+
+  .chat-window-component__purchase-service-option-1,
+  .chat-window-component__purchase-service-option-2 {
+    padding: 0.8rem 0;
+
+    border-radius: 1.2rem;
+    border-bottom-left-radius: 0.6rem;
+  }
+
+  .chat-window-component__purchase-service-option-1 > p:nth-child(3),
+  .chat-window-component__purchase-service-option-2 > p:nth-child(3) {
+    font-size: 1.5rem;
+
+    padding-left: 1.2rem;
+  }
+
+  /*  desktop - component 2 styling  */
+
+  .app-info-component {
+    align-content: center;
+  }
+
+  .app-info-component__detailed-info {
+    text-align: start;
+  }
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
