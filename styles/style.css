@@ -75,6 +75,47 @@ p {
 
 /* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
 
+body::after {
+  content: "";
+  display: block;
+  width: 75%;
+
+  background: linear-gradient(
+    to top,
+    var(--clr-gradient-light-violet),
+    var(--clr-gradient-light-magenta)
+  );
+  position: absolute;
+
+  left: -30%;
+  top: -25%;
+
+  height: 95%;
+
+  border-bottom-right-radius: 90rem;
+  border-bottom-left-radius: 26rem;
+}
+
+body::before {
+  content: "";
+
+  display: block;
+
+  width: 75%;
+
+  background-color: var(--clr-primary-pale-violet);
+
+  position: absolute;
+
+  right: -26%;
+  bottom: -27%;
+
+  height: 60%;
+
+  border-top-right-radius: 26rem;
+  border-top-left-radius: 90rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -331,20 +372,21 @@ p {
 
 @media screen and (min-width: 48rem) {
   body::after {
-    content: "";
-    display: block;
+    /* content: "";
+    display: block; */
     width: 35%;
 
-    background: linear-gradient(
+    /* background: linear-gradient(
       to top,
       hsl(264, 100%, 61%),
       hsl(293, 100%, 63%)
     );
 
-    position: absolute;
+    position: absolute; */
 
     left: -10%;
     top: -5%;
+
     height: 95%;
 
     border-bottom-right-radius: 26rem;
@@ -352,12 +394,12 @@ p {
   }
 
   body::before {
-    content: "";
-    display: block;
+    /* content: "";
+    display: block; */
     width: 35%;
 
-    background-color: var(--clr-primary-pale-violet);
-    position: absolute;
+    /* background-color: var(--clr-primary-pale-violet);
+    position: absolute; */
 
     right: -13.5%;
     bottom: -12%;
