@@ -105,6 +105,8 @@ p {
   gap: 1.5rem;
 
   background: var(--clr-secondary-light-grayish-violet);
+
+  z-index: 1;
 }
 
 .chat-window-component__user-profile {
@@ -307,6 +309,8 @@ p {
   display: grid;
   justify-items: center;
   gap: 3rem;
+
+  z-index: 2;
 }
 
 .app-info-component__header {
@@ -326,6 +330,40 @@ p {
 /* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
 
 @media screen and (min-width: 48rem) {
+  body::after {
+    content: "";
+    display: block;
+    width: 35%;
+
+    background-color: lightgreen;
+
+    position: absolute;
+
+    left: -10%;
+    top: -5%;
+    height: 95%;
+
+    border-bottom-right-radius: 26rem;
+    border-bottom-left-radius: 26rem;
+  }
+
+  body::before {
+    content: "";
+    display: block;
+    width: 35%;
+
+    background-color: lightgreen;
+    position: absolute;
+
+    right: -13.5%;
+    bottom: -12%;
+
+    height: 95%;
+
+    border-top-right-radius: 26rem;
+    border-top-left-radius: 26rem;
+  }
+
   .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "chat-window-component app-info-component";
