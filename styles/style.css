@@ -56,6 +56,8 @@ body {
   /* 16px */
   font-size: 1.6em;
   font-family: var(--ff-primary);
+
+  background: var(--clr-secondary-light-grayish-violet);
 }
 
 img {
@@ -107,7 +109,7 @@ p {
 
 .chat-window-component__user-profile {
   display: grid;
-  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-columns: 0.25fr 1.75fr;
   grid-template-areas:
     "chat-window-component__white-top chat-window-component__white-top"
     "chat-window-component__user-profile-img chat-window-component__user-name"
@@ -140,20 +142,22 @@ p {
 
 .chat-window-component__user-profile-img > img {
   border-radius: 50%;
+
+  border: 1px solid var(--clr-secondary-light-grayish-violet);
 }
 
 .chat-window-component__user-name {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 
   color: var(--clr-secondary-light-grayish-violet);
 }
 
 .chat-window-component__user-status {
-  font-size: 1.3rem;
+  font-size: 1rem;
 
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 
   color: var(--clr-primary-pale-violet);
 }
@@ -263,6 +267,8 @@ p {
   font-size: 1rem;
 
   width: 50%;
+
+  color: var(--clr-primary-pale-violet);
 }
 
 .chat-window-component__purchase-service-option-1 > p:nth-child(3),
@@ -289,14 +295,32 @@ p {
   margin-bottom: 2rem;
 
   padding: 1.6rem 15rem 1.6rem 2.2rem;
+
+  color: var(--clr-primary-grayish-blue);
 }
 
 /* style 2nd component - mobile */
 
 .app-info-component {
-  width: 320px;
+  width: 34rem;
 
   display: grid;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.app-info-component__header {
+  font-size: 4.6rem;
+  font-weight: var(--fw-500);
+
+  color: var(--clr-primary-very-dark-desaturated-violet);
+}
+
+.app-info-component__detailed-info {
+  text-align: center;
+  color: var(--clr-primary-dark-grayish-violet);
+
+  font-size: 1.75rem;
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
