@@ -259,7 +259,7 @@ p {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 1px solid var(--clr-primary-pale-violet);
+  border: 1px solid var(--clr-secondary-very-light-magenta);
 
   margin: 0 1rem;
 }
@@ -335,7 +335,11 @@ p {
     display: block;
     width: 35%;
 
-    background-color: lightgreen;
+    background: linear-gradient(
+      to top,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%)
+    );
 
     position: absolute;
 
@@ -352,7 +356,7 @@ p {
     display: block;
     width: 35%;
 
-    background-color: lightgreen;
+    background-color: var(--clr-primary-pale-violet);
     position: absolute;
 
     right: -13.5%;
