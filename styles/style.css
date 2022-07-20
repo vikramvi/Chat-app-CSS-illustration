@@ -152,11 +152,11 @@ body::before {
 
 .chat-window-component__user-profile {
   display: grid;
-  grid-template-columns: 0.25fr 1.75fr;
+  grid-template-columns: 0.15fr 0.25fr 1.45fr 0.15fr;
   grid-template-areas:
-    "chat-window-component__white-top chat-window-component__white-top"
-    "chat-window-component__user-profile-img chat-window-component__user-name"
-    "chat-window-component__user-profile-img chat-window-component__user-status";
+    "chat-window-component__white-top chat-window-component__white-top chat-window-component__white-top chat-window-component__white-top"
+    "chat-window-component__left-icon chat-window-component__user-profile-img chat-window-component__user-name chat-window-component__right-icon"
+    "chat-window-component__left-icon chat-window-component__user-profile-img chat-window-component__user-status chat-window-component__right-icon";
   align-items: center;
 
   padding: 0 2rem 1.5rem 2rem;
@@ -181,6 +181,15 @@ body::before {
   border-bottom-right-radius: 2.5rem;
 
   margin-bottom: 1.5rem;
+}
+
+.chat-window-component__left-icon {
+  width: 1rem;
+}
+
+.chat-window-component__right-icon {
+  width: 1.5rem;
+  justify-self: end;
 }
 
 .chat-window-component__user-profile-img > img {
@@ -325,21 +334,46 @@ body::before {
 /* */
 
 .chat-window-component__new-message-input {
+  display: flex;
   justify-self: center;
-  max-width: 100%;
+
+  width: 27.5rem;
+  height: 4.6rem;
+
+  background: white;
+
+  border-radius: 4rem;
+
+  margin-bottom: 1.4rem;
 }
 
 .chat-window-component__new-message-input > input {
+  width: 85%;
+
   font-size: 1rem;
 
   border: none;
   border-radius: 4rem;
 
-  margin-bottom: 2rem;
-
-  padding: 1.6rem 15rem 1.6rem 2.2rem;
+  padding: 1.6rem 0 1.6rem 2rem;
 
   color: var(--clr-primary-grayish-blue);
+}
+
+.chat-window-component__new-message-input > section {
+  display: flex;
+  justify-content: center;
+
+  height: 3rem;
+  width: 3rem;
+  background: var(--clr-primary-grayish-blue);
+  border-radius: 50%;
+
+  margin-top: 0.7rem;
+}
+
+.chat-window-component__new-message-input > section > img {
+  width: 1.5rem;
 }
 
 /* style 2nd component - mobile */
@@ -478,6 +512,14 @@ body::before {
 
 .chat-window-component__user-status {
   grid-area: chat-window-component__user-status;
+}
+
+.chat-window-component__left-icon {
+  grid-area: chat-window-component__left-icon;
+}
+
+.chat-window-component__right-icon {
+  grid-area: chat-window-component__right-icon;
 }
 
 .chat-window-component__users-chat-section {
