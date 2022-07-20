@@ -50,6 +50,8 @@ html {
   /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
   height: 100%;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -58,6 +60,10 @@ body {
   font-family: var(--ff-primary);
 
   background: var(--clr-secondary-light-grayish-violet);
+
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 img {
@@ -90,7 +96,7 @@ body::after {
   left: -30%;
   top: -25%;
 
-  height: 95%;
+  height: 80%;
 
   border-bottom-right-radius: 90rem;
   border-bottom-left-radius: 26rem;
@@ -108,9 +114,9 @@ body::before {
   position: absolute;
 
   right: -26%;
-  bottom: -27%;
+  bottom: -2%;
 
-  height: 60%;
+  height: 50%;
 
   border-top-right-radius: 26rem;
   border-top-left-radius: 90rem;
@@ -337,7 +343,7 @@ body::before {
   display: flex;
   justify-self: center;
 
-  width: 27.5rem;
+  width: 29rem;
   height: 4.6rem;
 
   background: white;
