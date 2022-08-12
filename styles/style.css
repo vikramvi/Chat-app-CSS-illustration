@@ -310,8 +310,8 @@ body::before {
   border-bottom-left-radius: 0.8rem;
 }
 
-.chat-window-component__purchase-service-option-1 > section,
-.chat-window-component__purchase-service-option-2 > section {
+.chat-window-component__purchase-service-option-1 > div,
+.chat-window-component__purchase-service-option-2 > div {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
@@ -367,7 +367,7 @@ body::before {
   color: var(--clr-primary-grayish-blue);
 }
 
-.chat-window-component__new-message-input > section {
+.chat-window-component__new-message-input > figure {
   display: flex;
   justify-content: center;
 
@@ -379,7 +379,7 @@ body::before {
   margin-top: 0.7rem;
 }
 
-.chat-window-component__new-message-input > section > img {
+.chat-window-component__new-message-input > figure > img {
   width: 1.5rem;
 }
 
